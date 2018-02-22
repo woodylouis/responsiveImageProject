@@ -1,0 +1,257 @@
+﻿/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #fff;
+	line-height: 1.6;
+	margin: 0;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+	/*border: 3px solid green;*/
+	text-align: center;
+    color: grey;
+	
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    /*border: 3px solid green*/  
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
+	color: #434444;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+
+h2,
+h3,
+h4 {
+	text-align: center;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+.main-header,
+.main-footer {
+    border: 3px red solid;
+    background-color: #eff1f2;
+    text-align: center;
+
+}
+
+.portfolio {
+    background: white;
+     border: 3px red solid;
+}
+
+
+figure {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+figcaption {
+    font-size: 0.95rem;
+    line-height: 1.35em;
+    text-align: center;
+    width: 95%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+p {
+    font-size: 0.95rem;
+    line-height: 1.35em;
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto
+}
+
+h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.name {
+	font-size: 1.75rem;
+	margin-bottom: 0;
+
+}
+
+.main-nav a {
+    font-weight: bold;
+    font-size: 1.15rem;
+    background-color: #fff;
+    display: block;
+    line-height: 2.5em
+}
+
+.main-nav li,
+.contact-details li {
+    display: block;
+    /*border: 1px black solid;*/  
+}
+
+.main-nav li {
+    padding: 5px 5px;
+}
+
+.name,
+.main-nav {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding: 10px
+    /*border: 3px solid green;*/
+}
+
+
+
+
+/* ---- Image layout ---- */
+
+.profile-image {
+    max-width: 70%;
+
+}
+
+.portfolio-img {
+    width: 100%;
+    margin-top: 35px;
+}
+
+
+.portfolio {
+    padding-top: 2.5em;
+}
+/* ---- footer layout ---- */
+.main-footer {
+    border-top: 1px black solid;
+    padding-top: 5em;
+    padding-bottom: 25px;
+}
+
+.contact-details {
+    padding:0;
+    line-height: 2.5rem;
+}
+
+.name-footer {
+    float: left;
+    padding-left: 15px;
+}
+
+.backtotop {
+    float: right;
+    padding-right: 15px
+}
+
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both
+}
+
+
+@media (min-width: 768px) {
+
+    .main-nav li {
+        display: inline-block;
+        padding: 0;
+    }
+
+    .main-nav a {
+        background-color: transparent;
+        padding-right: 28px;
+    }
+
+    .profile-container {
+        
+        width: 100%;
+        border: blue solid;
+        padding-top: 10px;
+
+    }
+
+    .intro {
+        float: left;
+        width: 60%;
+        border: yellow solid;
+        line-height: 1.75em;
+        margin-top: 0;
+    }
+
+    .profile-image {
+        float: right;
+        border: yellow solid;
+        width: 40%;
+        margin-top: 0;
+    }
+
+    .portfolio-container {
+        width: 100%;
+        border: green solid;
+    }
+
+    .col {
+        width: 50%;
+
+    }
+
+    .marketing-page,
+    .travel-app,
+    .photo-gallery {
+        float: left;
+        border: black solid;
+        width: 50%;
+    }
+
+
+    .search-page,
+    .map-of-favorite-spots,
+    .caculator {
+        float: right;
+        border: black solid;
+        width: 50%;
+    }
+
+
+}
+

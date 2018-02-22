@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Responsive Layout Project</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="css/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+    </head>
+    <body>
+		<header class="main-header">
+			<h1 class="name">Student Name</h1>
+			<ul class="main-nav">
+				<li><a href="#">Home</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+            <div class="profile-container clearfix">
+                <img src="images/responsive-layout-profile.png"
+                     alt="profile-image"
+                     class="profile-image clearfix" />
+                <p class="intro clearfix">
+                    Hi! I'm a front-end developer who loves responsive design and css.
+                    I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!
+                </p>
+            </div>
+            
+		</header>
+
+        <main id="portfoliosection" class="portfolio">
+           <h2>Portfolio</h2>
+            <div class="portfolio-container">
+                <figure>
+                    <div class="marketing-page col">
+                        <!-- marking page -->
+                        <a href="#">
+                            <img class="marketing-pic portfolio-img"
+                                 src="images/marketing.png"
+                                 alt="marketing" />
+                        </a>
+                        <h3>Marketing Page</h3>
+                        <figcaption>This project shows the front page of a marking website meant for a specific business I'm interested in.</figcaption>
+                    </div> <!--END marking page -->
+
+                    <div class="search-page col">
+                        <!-- search page -->
+                        <a href="#">
+                            <img class="earch-pic portfolio-img"
+                                 src="images/searchpage.png"
+                                 alt="searching" />
+                        </a>
+                        <h3>Search Page</h3>
+                        <figcaption>This project searches through a specific database to find information that the user is trying to look up.</figcaption>
+                    </div> <!-- END search page -->
+
+                    <div class="travel-app col">
+                        <!-- travel-app -->
+                        <a href="#">
+                            <img class="travel-app-pic portfolio-img"
+                                 src="images/travelapp.png"
+                                 alt="travelapp" />
+                        </a>
+                        <h3>Travel App</h3>
+                        <figcaption>This project compares travel times based on different transportation methods and tells you the best one.</figcaption>
+                    </div> <!-- END travel-app -->
+
+                    <div class="map-of-favorite-spots col">
+                        <!-- map-of-favorite-spots -->
+                        <a href="#">
+                            <img class="map-of-favorite-spots-pic portfolio-img"
+                                 src="images/mapsoffavoritespots.png"
+                                 alt="mapoffavoritesports" />
+                        </a>
+                        <h3>Map of Favorite Spots</h3>
+                        <figcaption>
+                            This project uses mapping apis to plot points for my favorite spots in the city for a do-it-
+                            yourself walking tour.
+                        </figcaption>
+                    </div> <!-- END map-of-favorite-spots -->
+
+                    <div class="photo-gallery col">
+                        <!-- Photo Gallery -->
+                        <a href="#">
+                            <img class="photogallery portfolio-img"
+                                 src="images/photogallery.png"
+                                 alt="my-photo-gallery" />
+                        </a>
+                        <h3>Photo Gallery</h3>
+                        <figcaption>
+                            This project shows pictures from a recent trip to the viewer and allows them to easily navigate
+                            through photos.
+                        </figcaption>
+                    </div> <!-- END Photo Gallery -->
+
+                    <div class="caculator col">
+                        <!-- Caculator -->
+                        <a href="#">
+                            <img class="caculatorpic portfolio-img"
+                                 src="images/caculator.png"
+                                 alt="caculatorapp" />
+                        </a>
+                        <h3>Caculator</h3>
+                        <figcaption>Someone can enter in the numbers they want, and press the big blue button and get the result.</figcaption>
+                    </div> <!-- END caculator -->
+                </figure>  <!-- END portfolio overview -->
+            </div>
+		</main> <!-- END --> 
+
+
+    </body>
+
+    <footer class="main-footer clearfix">
+        <div id="contactsecion" class="contact">
+            <h2>Contact</h2>
+            <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+            <ul class="contact-details">
+                <li>Phone +1 (111) 555-1234</li>
+                <li>Email email@yoursite.com</li>
+            </ul>
+        </div>
+
+        <div class="second-footer">
+            <a href="#"><h5 class="name-footer">Student Name</h5></a>
+            <a href="#"><h5 class="backtotop">Back to Top</h5></a>
+        </div>
+    </footer>
+</html>
