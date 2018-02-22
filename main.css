@@ -232,6 +232,7 @@ h3 {
 
     .col {
         width: 50%;
+        display: block;
 
     }
 
