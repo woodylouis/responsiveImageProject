@@ -5,7 +5,7 @@
         <title>Responsive Layout Project</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="main.css">
-		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="normalized.css">
         <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
     </head>
     <body>
@@ -28,10 +28,11 @@
             
 		</header>
 
-        <main id="portfoliosection" class="portfolio">
-           <h2>Portfolio</h2>
-            <div class="portfolio-container">
-                <figure>
+        <main id="portfoliosection" class="portfolio ">
+           
+            <section class="portfolio-container clearfix">
+              
+                    <h2>Portfolio</h2>
                     <div class="marketing-page col">
                         <!-- marking page -->
                         <a href="#">
@@ -40,7 +41,7 @@
                                  alt="marketing" />
                         </a>
                         <h3>Marketing Page</h3>
-                        <figcaption>This project shows the front page of a marking website meant for a specific business I'm interested in.</figcaption>
+                        <p>This project shows the front page of a marking website meant for a specific business I'm interested in.</p>
                     </div> <!--END marking page -->
 
                     <div class="search-page col">
@@ -51,7 +52,7 @@
                                  alt="searching" />
                         </a>
                         <h3>Search Page</h3>
-                        <figcaption>This project searches through a specific database to find information that the user is trying to look up.</figcaption>
+                        <p>This project searches through a specific database to find information that the user is trying to look up.</p>
                     </div> <!-- END search page -->
 
                     <div class="travel-app col">
@@ -62,7 +63,7 @@
                                  alt="travelapp" />
                         </a>
                         <h3>Travel App</h3>
-                        <figcaption>This project compares travel times based on different transportation methods and tells you the best one.</figcaption>
+                        <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
                     </div> <!-- END travel-app -->
 
                     <div class="map-of-favorite-spots col">
@@ -73,10 +74,10 @@
                                  alt="mapoffavoritesports" />
                         </a>
                         <h3>Map of Favorite Spots</h3>
-                        <figcaption>
+                        <p>
                             This project uses mapping apis to plot points for my favorite spots in the city for a do-it-
                             yourself walking tour.
-                        </figcaption>
+                        </p>
                     </div> <!-- END map-of-favorite-spots -->
 
                     <div class="photo-gallery col">
@@ -87,10 +88,10 @@
                                  alt="my-photo-gallery" />
                         </a>
                         <h3>Photo Gallery</h3>
-                        <figcaption>
+                        <p>
                             This project shows pictures from a recent trip to the viewer and allows them to easily navigate
                             through photos.
-                        </figcaption>
+                        </p>
                     </div> <!-- END Photo Gallery -->
 
                     <div class="caculator col">
@@ -101,10 +102,10 @@
                                  alt="caculatorapp" />
                         </a>
                         <h3>Caculator</h3>
-                        <figcaption>Someone can enter in the numbers they want, and press the big blue button and get the result.</figcaption>
+                        <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
                     </div> <!-- END caculator -->
-                </figure>  <!-- END portfolio overview -->
-            </div>
+                  <!-- END portfolio overview -->
+            </section>
 		</main> <!-- END --> 
 
 
@@ -113,10 +114,10 @@
     <footer class="main-footer clearfix">
         <div id="contactsecion" class="contact">
             <h2>Contact</h2>
-            <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+            <p class="closingmsg">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
             <ul class="contact-details">
-                <li>Phone +1 (111) 555-1234</li>
-                <li>Email email@yoursite.com</li>
+                <li>Phone <span class="phone">(111) 555-1234</span></li>
+                <li>Email <span class="email">email@yoursite.com</span></li>
             </ul>
         </div>
 
@@ -124,5 +125,11 @@
             <a href="#"><h5 class="name-footer">Student Name</h5></a>
             <a href="#"><h5 class="backtotop">Back to Top</h5></a>
         </div>
+
+        <ul class="footer-nav clearfix">
+            <li><a href="#">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </footer>
 </html>
