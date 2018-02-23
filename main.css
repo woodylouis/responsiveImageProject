@@ -11,6 +11,7 @@ body {
 	background-color: #fff;
 	line-height: 1.6;
 	margin: 0;
+    font-size: 16px;
 }
 
 p {
@@ -41,7 +42,7 @@ a {
 
 h2 {
     text-transform: uppercase;
-    font-size: 1.25rem;
+    font-size: 1.25rem;
 }
 
 h2,
@@ -62,7 +63,7 @@ h3 {
 
 .main-header,
 .main-footer {
-    border: 3px red solid;
+    /*border: 3px red solid;*/
     background-color: #eff1f2;
     text-align: center;
 
@@ -70,7 +71,7 @@ h3 {
 
 .portfolio {
     background: white;
-     border: 3px red solid;
+    /*border: 3px red solid;*/
 }
 
 
@@ -82,7 +83,7 @@ figure {
 
 .portfolio-container {
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 
@@ -143,10 +144,8 @@ h3 {
 
 
 /* ---- Image layout ---- */
-
 .profile-image {
-    max-width: 70%;
-
+    width: 100%;
 }
 
 .portfolio-img {
@@ -156,19 +155,19 @@ h3 {
 
 
 .portfolio {
-    padding-top: 2.5em;
+    padding-top: 0;
     background-color: #eff1f2;
 }
 
 .portfolio-container {
-    background-color: white;
+    background-color: #fcfff7;
 }
 
 
 /* ---- footer layout ---- */
 .main-footer {
-    border-top: 1px black solid;
-    padding-top: 5em;
+    /*border-top: 1px black solid;*/
+    padding-top: 50px;
     /*padding-bottom: 25px;*/
 }
 
@@ -211,9 +210,26 @@ h3 {
 }
 
 
-
+/* ================================= 
+  For min-width: 768px
+==================================== */
 
 @media (min-width: 768px) {
+    .main-header {
+        padding-top:2.5%;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+    }
+        
+    .name {     
+        /*border: solid;*/
+        float: left;    
+    }
+
+    .main-nav {
+        /*border: solid;*/
+        text-align: right;
+    }
 
     .main-nav li {
         display: inline-block;
@@ -222,63 +238,72 @@ h3 {
 
     .main-nav a {
         background-color: transparent;
-        padding-right: 28px;
+        padding-left: 28px;
     }
 
     .profile-container {
         
         width: 100%;
-        border: blue solid;
-        padding-top: 10px;
+       
+        
     }
 
-    .portfolio-container {
+    .portfolio-container
+     {
         max-width: 100%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        /*border: blue solid;*/
     }
 
     .intro {
         float: left;
         width: 60%;
-        border: yellow solid;
+        /*border: yellow solid;*/
         line-height: 1.75em;
-        margin-top: 0;
+        margin-top: 0;
+        font-size: 1.15em;
+        padding-left: 1%;
+        padding-right: 1%;
+        text-align: left;
     }
 
     .profile-image {
         float: right;
-        border: yellow solid;
+        /*border: yellow solid;*/
         width: 40%;
         margin-top: 0;
+        padding: 3%;
     }
 
-
-
-
-    .portfolio-container {
-        
-        width: 100%;
-        
-    }
     .marketing-page,
     .travel-app,
     .photo-gallery {
         float: left;
-        border: black solid;
-        width: 50%;       
+        width: 50%;
+        padding-left: 20px;
+        padding-right: 5px;
     }
-
 
     .search-page,
     .map-of-favorite-spots,
     .caculator {
         float: right;
-        border: black solid;
-        width: 50%;
         
+        width: 50%;
+        padding-right:20px;
+        padding-left: 5px;
     }
+
+    .main-footer {
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+    }
+
     .footer-nav li {
         display: inline-block;
         padding-right: 20px;
+        
     }
 
     .footer-nav a {
@@ -288,8 +313,9 @@ h3 {
     }
 
     .footer-nav {
-        float:right;
-        padding-right: 15px;
+        float: right;
+        padding-left: 15px;
+        text-align: right;
     }
 
     .backtotop {
@@ -299,7 +325,45 @@ h3 {
     .name-footer {
         font-size: 0.95em;
     }
-    
+}
 
+/* ================================= 
+  For min-width: 1024px
+==================================== */
+
+@media (min-width: 1024px) {
+
+    .portfolio-container {
+        padding-left: 0.5%;
+        padding-right: 0.5%;
+    }
+    
+    .left-col,
+    .middle-col,
+    .right-col {
+        
+        justify-content: center;
+        width: 33%;
+        padding: unset;
+    }
+
+    .left-col {
+        float:left;  
+
+        padding-left: 1%;
+    }
+
+    .middle-col {
+        float: left;
+        padding-left: 1%;
+    }
+
+    .right-col {
+        float: left;
+        padding-left: 1%;
+        
+    }
+
+  
 }
 
