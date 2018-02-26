@@ -87,6 +87,7 @@ figure {
 }
 
 
+
 /* ================================= 
   Base Layout Styles
 ==================================== */
@@ -99,7 +100,8 @@ p {
     text-align: center;
     width: 90%;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto
+
 }
 
 h3 {
@@ -118,7 +120,8 @@ h3 {
     font-size: 1.15rem;
     background-color: #fff;
     display: block;
-    line-height: 2.5em
+    line-height: 2.5em
+
 }
 
 .main-nav li,
@@ -140,12 +143,34 @@ h3 {
     /*border: 3px solid green;*/
 }
 
+.myskills {
+    background: #eff1f2;
+    max-width: 100%;
+    text-align: center;
+    /*border: solid;*/
+    padding-top: 50px;
+}
+
+.myskills li {
+        display: inline-block;
+        background: #eff1f2;
+        border-radius: 10px;
+        padding: 5px 10px;
+        margin: 2px;
+        color: Grey;
+    }
 
 
+.skill-container {
+    background: #fcfff7;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    padding: 1%;
+}
 
 /* ---- Image layout ---- */
 .profile-image {
-    width: 100%;
+    width: 100%
 }
 
 .portfolio-img {
@@ -183,7 +208,8 @@ h3 {
 
 .backtotop {
     float: right;
-    padding-right: 15px
+    padding-right: 15px
+
 }
 
 .phone,
@@ -200,6 +226,19 @@ h3 {
     display: none;
 }
 
+/* ---- Hover Section ---- */
+    .nav a:hover {
+        color: tomato;
+        background: #fcfff7;
+        border-radius: 30px;
+    }
+
+.myskills li:hover {
+    color: #fcfff7;
+    background: tomato;
+}
+
+
 /* ================================= 
   Float clearfix
 ==================================== */
@@ -209,6 +248,20 @@ h3 {
     clear: both
 }
 
+/* ================================= 
+  For gallery.html
+==================================== */
+
+.gallery p {
+    color: white;
+    text-align: center;
+    padding: 10% 14%;
+    border-top: 10px solid #ffa949;
+    margin: 60px 60px;
+    background: #434a52 url('../images/2.jpg') no-repeat center;
+    background-size: cover;
+    box-shadow: inset 0px 0px 50px 20px rgba(0,0,0,1), /* 0 0 40px 30px rgba(255,0,0,1) */
+}
 
 /* ================================= 
   For min-width: 768px
@@ -239,7 +292,9 @@ h3 {
     .main-nav a {
         background-color: transparent;
         padding-left: 28px;
+        padding-right: 28px;
     }
+
 
     .profile-container {
         
@@ -310,6 +365,8 @@ h3 {
         background-color: transparent;
         font-weight: bold;
         font-size: 0.95em;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .footer-nav {
@@ -363,7 +420,5 @@ h3 {
         padding-left: 1%;
         
     }
-
-  
 }
 

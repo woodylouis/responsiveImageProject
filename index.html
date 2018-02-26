@@ -4,18 +4,22 @@
         <meta charset="utf-8" />
         <title>Responsive Layout Project</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="main.css">
-		<link rel="stylesheet" href="normalized.css">
+        <link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/normalized.css">
         <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
     </head>
     <body>
 		<header class="main-header">
 			<h1 class="name">Student Name</h1>
-			<ul class="main-nav">
-				<li><a href="#">Home</a></li>
-				<li><a href="#portfoliosection">Portfolio</a></li>
-				<li><a href="#contactsecion">Contact</a></li>
-			</ul>
+            <div class="nav">
+                <ul class="main-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#portfoliosection">Portfolio</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contactsecion">Contact</a></li>
+                </ul>
+            </div>
             <div class="profile-container clearfix">
                 <img src="images/responsive-layout-profile.png"
                      alt="profile-image"
@@ -108,7 +112,19 @@
             </section>
 		</main> <!-- END --> 
 
-
+        <div id="skills" class="myskills">
+            <h2>My Skills</h2>
+            <div class="skill-container">
+                <p>I want to master the process of building web sites and increase my knowledge, skills and abilities in:</p>
+                <ul class="skills">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Swift</li>
+                    <li>C#</li>
+                </ul>
+            </div>
+        </div>
     </body>
 
     <footer class="main-footer clearfix">
@@ -126,10 +142,14 @@
             <a href="#"><h5 class="backtotop">Back to Top</h5></a>
         </div>
 
-        <ul class="footer-nav clearfix">
-            <li><a href="#">Home</a></li>
-            <li><a href="#portfoliosection">Portfolio</a></li>
-            <li><a href="#contactsecion">Contact</a></li>
-        </ul>
+        <div class="nav">
+            <ul class="footer-nav clearfix">
+                <li><a href="#">Home</a></li>
+                <li><a href="#portfoliosection">Portfolio</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contactsecion">Contact</a></li>
+            </ul>
+        </div>
     </footer>
 </html>
